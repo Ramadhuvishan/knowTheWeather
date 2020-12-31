@@ -14,7 +14,7 @@ def report():
 @app.route('/')
 @app.route('/front')
 def front():
-    return redirect('front.html')
+    return render_template('front.html')
 
 if __name__ == '__main__':
     app.run(debug = True)
