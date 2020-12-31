@@ -12,6 +12,7 @@ def report():
     return render_template('result.html',result = data)
 
 @app.route('/')
+@app.route('/front')
 def front():
     return redirect('front.html')
 
