@@ -11,7 +11,7 @@ def report():
     data = res.json()
     return render_template('result.html',result = data)
 
-@app.route('/front')
+@app.route('/')
 def front():
     return redirect('front.html')
 
